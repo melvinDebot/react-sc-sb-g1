@@ -15,7 +15,7 @@ const BadgeWrapper = styled.span`
   border-radius: 22px;
   color: white;
   font-family: sans-serif;
-  font-size: 12px;
+  font-size: 13px;
 `;
 
 const Badge = props => {
