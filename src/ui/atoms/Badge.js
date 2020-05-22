@@ -5,7 +5,7 @@ import Colors from "../particles/Colors";
 
 export const colors = {
     purple: "purple",
-    grey: "grey"
+    grey: "green"
 };
 
 const BadgeWrapper = styled.span`
@@ -15,7 +15,7 @@ const BadgeWrapper = styled.span`
   border-radius: 22px;
   color: white;
   font-family: sans-serif;
-  font-size: 13px;
+  font-size: 12px;
 `;
 
 const Badge = props => {
