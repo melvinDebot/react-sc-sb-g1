@@ -19,7 +19,12 @@ import Large from '../ui/molecules/Large';
 export default {
   title : 'Categories',
   component: [Title, Button, Img],
-  decorators: [withKnobs]
+  decorators: [withKnobs],
+    parameters: {
+        backgrounds: [
+            { name: 'background', value: '#15121C', default: true }
+        ]
+    },
 };
 
 export const Small = () => {

@@ -13,6 +13,7 @@ const LargeStyle = styled.div`
   height: 86px;
   display: flex;
   background: #15121C;
+  font-family: 'Roobert Trial';
 `
 export default () => {
   return(
