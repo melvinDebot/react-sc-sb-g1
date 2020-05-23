@@ -12,7 +12,6 @@ const LargeStyle = styled.div`
   width: 344px;
   height: 86px;
   display: flex;
-  background: #15121C;
 `
 export default () => {
   return(

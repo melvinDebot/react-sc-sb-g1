@@ -23,7 +23,7 @@ export default {
   decorators: [withKnobs],
     parameters: {
         backgrounds: [
-            { name: 'background', value: '#3A2E5D', default: true }
+            { name: 'background', value: '#15121C', default: true }
         ]
     },
 };
@@ -45,8 +45,11 @@ export const VeryLarge = () => {
   return(
     <VeryLargeBlock>
       <Img size={imgSize.veryLarge}/>
-      <Title text={text("Label", "Just Chatting")} size={sizes.title}/>
+      <Title color="#fefefe" text={text("Label", "Just Chatting")} size={sizes.title}/>
     </VeryLargeBlock>
+  )
+}
+
 
 export const SmallWithBadge = () => {
   return(
