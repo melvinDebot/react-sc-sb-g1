@@ -17,6 +17,7 @@ const ImageStyled = styled.img`
   background-size: cover;
   width: ${props=> (props.size)};
   height: 86px;
+  margin-right: 10px;
 `
 
 const Img = ({ src, size }) => (
