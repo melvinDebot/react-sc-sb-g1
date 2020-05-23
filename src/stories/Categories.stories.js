@@ -4,12 +4,13 @@ import { action } from '@storybook/addon-actions';
 //IMPORT COMPONENT
 import Title, {sizes} from '../ui/atoms/Title';
 import { Button } from '@storybook/react/demo';
+import { Img } from '../ui/atoms/img'
 
 import { withKnobs, text } from "@storybook/addon-knobs";
 
 export default {
   title : 'Categories',
-  component: [Title, Button],
+  component: [Title, Button, Img],
   decorators: [withKnobs]
 };
 
