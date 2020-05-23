@@ -47,7 +47,8 @@ export const VeryLarge = () => {
       <Img size={imgSize.veryLarge}/>
       <Title text={text("Label", "Just Chatting")} size={sizes.title}/>
     </VeryLargeBlock>
-
+  )
+}
 export const SmallWithBadge = () => {
   return(
     <SmallBadgeStyle>
