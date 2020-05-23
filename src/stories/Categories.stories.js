@@ -18,7 +18,7 @@ export default {
 
 const SmallBlock = styled.div`
   width:88px;
-  height:151px;
+  height:150px;
   display:flex;
   flex-direction : column;
   background-color:#15121C
