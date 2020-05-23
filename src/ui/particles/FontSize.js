@@ -1,6 +1,6 @@
-const fontSize = {
-  title: "18px",
-  desc:"12px"
+const FontSize = {
+  size_primary: "18px",
+  size_secondary:"12px"
 }
 
-export default fontSize;
+export default FontSize;

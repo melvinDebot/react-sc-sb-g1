@@ -23,10 +23,7 @@ const Badge = props => {
     return <BadgeWrapper color={color}>{text}</BadgeWrapper>;
 };
 
-Badge.propTypes = {
-    color: PropTypes.oneOf(Object.keys(colors)),
-    text: PropTypes.string
-};
+
 
 Badge.defaultProps = {
     color: colors.grey
