@@ -8,7 +8,7 @@ import { Button } from '@storybook/react/demo';
 import  Img from '../ui/atoms/img';
 import styled from "styled-components";
 import { withKnobs, text  } from "@storybook/addon-knobs";
-
+import Large from '../ui/molecules/Large'
 
 export default {
   title : 'Categories',
@@ -34,6 +34,12 @@ export const Small = () => {
     </SmallBlock>
   )
 }
+export const LargeVersion = () => {
+  return (
+    <Large></Large>
+  )
+}
+
 
 
 export const Titre = () => <Title text={text("Label", "Just Chatting")} size={sizes.title} />
