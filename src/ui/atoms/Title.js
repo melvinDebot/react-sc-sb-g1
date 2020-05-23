@@ -9,7 +9,6 @@ export const sizes = {
 }
 
 const Title = (textColor = "white", text) => {
-
   const TitleColor = styled.h1`
     color = ${textColor}
     margin:0;
