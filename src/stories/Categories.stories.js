@@ -35,6 +35,7 @@ export const Small = () => {
     </SmallBlock>
   )
 }
+
 export const LargeVersion = () => {
   return (
     <Large></Large>
