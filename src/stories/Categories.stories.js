@@ -8,7 +8,7 @@ import Desc from '../ui/atoms/Description';
 import { Button } from '@storybook/react/demo';
 import  Img from '../ui/atoms/img';
 import styled from "styled-components";
-import { withKnobs, text  } from "@storybook/addon-knobs";
+import { withKnobs, text, color  } from "@storybook/addon-knobs";
 import {SmallBlock } from '../ui/molecules/Small';
 import Large from '../ui/molecules/Large'
 
@@ -23,7 +23,7 @@ export const Small = () => {
   return(
     <SmallBlock>
       <Img />
-      <Title text={text("Label", "Just Chatting")} size={sizes.title} />
+      <Title text={text("Label", "Just Chatting")} size={sizes.title} color="red"/>
       <Desc description="253,2  k spectateurs" />
     </SmallBlock>
   )
