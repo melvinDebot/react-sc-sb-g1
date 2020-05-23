@@ -1,4 +1,4 @@
 Atomic Design
 
-![picture](mockup.png)
-![Maquettes](dog.png)
+![picture](doc.jpg)
+![Maquettes](mockup.png)
