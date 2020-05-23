@@ -1,26 +1,15 @@
 import React from 'react';
-import styled from 'styled-components';
-// import PropTypes from 'props-type';
-import defaultBackground from '../../assets/img/Thumbnail.png';
+import backgroundImg from '../../assets/img/Thumbnail.png';
 
-export const photo = {
-  imageBg : defaultBackground
-}
+export default {
+  title: 'img',
+};
 
-const img = styled.img`
-  height: 86px;
-  width: 72px;
-  background-image: url('${props => (props.image)}')
-  background-size: cover;
-`;
+const image = {
+  src: backgroundImg,
+  alt: 'my image',
+};
 
-const Img = (props) => {
-  const { image } = props;
-  return <Img src={props.image}/>
-}
-
-Img.defaultProps = {
-  image : photo.imageBg
-}
-
-export default Img;
+export const Img = () => (
+  <img src={image.src} alt={image.alt} />
+);
