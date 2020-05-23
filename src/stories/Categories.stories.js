@@ -12,15 +12,23 @@ import  Img, {imgSize} from '../ui/atoms/img';
 import styled from "styled-components";
 import { withKnobs, text, color  } from "@storybook/addon-knobs";
 import {SmallBlock } from '../ui/molecules/Small';
+import {VeryLargeBlock } from '../ui/molecules/VeryLarge';
+import Large from '../ui/molecules/Large'
 import {SmallBadgeStyle} from '../ui/molecules/SmallWithBadge';
-import Large from '../ui/molecules/Large';
 
 
 export default {
   title : 'Categories',
   component: [Title, Button, Img],
-  decorators: [withKnobs]
+  decorators: [withKnobs],
+    parameters: {
+        backgrounds: [
+            { name: 'background', value: '#3A2E5D', default: true }
+        ]
+    },
 };
+
+
 
 export const Small = () => {
   return(
@@ -32,6 +40,14 @@ export const Small = () => {
   )
 }
 
+
+export const VeryLarge = () => {
+  return(
+    <VeryLargeBlock>
+      <Img size={imgSize.veryLarge}/>
+      <Title text={text("Label", "Just Chatting")} size={sizes.title}/>
+    </VeryLargeBlock>
+
 export const SmallWithBadge = () => {
   return(
     <SmallBadgeStyle>
@@ -39,6 +55,7 @@ export const SmallWithBadge = () => {
       <Title text={text("Label", "Just Chatting")} size={sizes.desc} color="white"/>
       <Desc description="253,2  k spectateurs" />
     </SmallBadgeStyle>
+
   )
 }
 
@@ -47,6 +64,7 @@ export const LargeVersion = () => {
     <Large></Large>
   )
 }
+
 
 
 
