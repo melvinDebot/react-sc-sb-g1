@@ -9,8 +9,8 @@ import { Button } from '@storybook/react/demo';
 import  Img from '../ui/atoms/img';
 import styled from "styled-components";
 import { withKnobs, text  } from "@storybook/addon-knobs";
-
 import {SmallBlock } from '../ui/molecules/Small';
+import Large from '../ui/molecules/Large'
 
 
 export default {
@@ -28,5 +28,11 @@ export const Small = () => {
     </SmallBlock>
   )
 }
+export const LargeVersion = () => {
+  return (
+    <Large></Large>
+  )
+}
+
 
 
