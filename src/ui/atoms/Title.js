@@ -12,7 +12,8 @@ const Texte = styled.h1`
   color: white;
   margin:0;
   padding:0;
-  font-size: ${sizes.title}
+  font-size: ${sizes.title};
+  font-family: 'Roobert TRIAL';
 `
 
 const Title = props => {

@@ -11,4 +11,5 @@ flex-direction : column;
 background-color:#15121C
 justify-content: space-around;
 background: #15121C;
+font-family: 'Roobert TRIAL';
 `

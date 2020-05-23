@@ -14,6 +14,7 @@ const Texte = styled.h2`
   padding:0;
   margin-top:5px;
   color: #9F9F9F;
+  font-family: 'Roobert TRIAL';
   font-size: ${FontSize .size_secondary}
 `
 

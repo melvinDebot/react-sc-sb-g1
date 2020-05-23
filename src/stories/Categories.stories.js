@@ -16,8 +16,15 @@ import Large from '../ui/molecules/Large'
 export default {
   title : 'Categories',
   component: [Title, Button, Img],
-  decorators: [withKnobs]
+  decorators: [withKnobs],
+    parameters: {
+        backgrounds: [
+            { name: 'background', value: '#3A2E5D', default: true }
+        ]
+    },
 };
+
+
 
 export const Small = () => {
   return(
