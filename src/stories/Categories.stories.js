@@ -14,8 +14,9 @@ export default {
   decorators: [withKnobs]
 };
 
-export const Image = () => <Img image={photo.imageBg}/>
+
 
 export const Titre = () => <Title text={text("Label", "Just Chatting")} size={sizes.title} />
 export const Description = () => <Title text={text("Label", "253,2  k spectateurs")} size={sizes.desc} />
 export const Bouton = () => <Button onClick={action('clicked')}>irl</Button>;
+export const Image = () => <Img image={photo.imageBg}/>
