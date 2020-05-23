@@ -4,10 +4,13 @@ import { files } from '@storybook/addon-knobs';
 
 //IMPORT COMPONENT
 import Title, {sizes} from '../ui/atoms/Title';
+import Desc from '../ui/atoms/Description';
 import { Button } from '@storybook/react/demo';
 import  Img from '../ui/atoms/img';
 import styled from "styled-components";
 import { withKnobs, text  } from "@storybook/addon-knobs";
+
+import {SmallBlock } from '../ui/molecules/Small';
 
 
 export default {
@@ -16,28 +19,14 @@ export default {
   decorators: [withKnobs]
 };
 
-const SmallBlock = styled.div`
-  width:88px;
-  height:150px;
-  display:flex;
-  flex-direction : column;
-  background-color:#15121C
-  justify-content: space-between;
-`
-
 export const Small = () => {
-  return (
+  return(
     <SmallBlock>
       <Img />
       <Title text={text("Label", "Just Chatting")} size={sizes.title} />
-      <Title text={text("Label", "253,2  k spectateurs")} size={sizes.desc} />
+      <Desc description="253,2  k spectateurs" />
     </SmallBlock>
   )
 }
 
-
-export const Titre = () => <Title text={text("Label", "Just Chatting")} size={sizes.title} />
-export const Description = () => <Title text={text("Label", "253,2  k spectateurs")} size={sizes.desc} />
-export const Bouton = () => <Button onClick={action('clicked')}>irl</Button>;
-export const Image = () => <Img />
 

@@ -8,19 +8,19 @@ export const sizes = {
   desc : "12px"
 }
 
-const Texte = styled.h1`
+const Texte = styled.h2`
   color: white;
   margin:0;
-  margin-top:5px;
-  font-family: roboto;
   padding:0;
-  font-size: ${sizes.desc}
+  margin-top:5px;
+  color: #9F9F9F;
+  font-size: ${FontSize .size_secondary}
 `
 
-const Title = props => {
-  const {size, text} = props;
-  return <Texte size={size}>{text}</Texte>
+const Desc = props => {
+  const {taille, description} = props;
+  return <Texte taille={taille}>{description}</Texte>
 }
 
 
-export default Title;
+export default Desc;
