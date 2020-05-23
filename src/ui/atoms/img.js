@@ -7,7 +7,7 @@ const image = {
   alt: 'my image',
 };
 
-const Img = () => (
+const Img = (props) => (
   <img src={image.src} alt={image.alt} />
 );
 
