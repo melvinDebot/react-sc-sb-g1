@@ -23,8 +23,6 @@ const Badge = props => {
     return <BadgeWrapper color={color}>{text}</BadgeWrapper>;
 };
 
-
-
 Badge.defaultProps = {
     color: colors.grey
 };

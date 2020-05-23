@@ -3,12 +3,24 @@ import styled from 'styled-components';
 import PropTypes from 'props-type';
 import defaultBackground from '../../assets/img/Large';
 
-const Img = styled.img`
+export const photo = {
+  imageBg : defaultBackground
+}
+
+const img = styled.img`
   height: 86px;
-  width: 72px
+  width: 72px;
+  background-image: url('${props => (props.image)}')
   background-size: cover;
 `;
 
-export const img = (props) => <Img src={props.background}/>
+const Img = (props) => {
+  const { image } = props;
+  return <Img src={props.image}/>
+}
 
-img.defaultProps = { background: defaultBackground };
+Img.defaultProps = {
+  image : photo.imageBg
+}
+
+export default Img;
