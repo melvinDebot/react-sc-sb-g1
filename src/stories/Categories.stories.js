@@ -10,6 +10,7 @@ import  Img, {imgSize} from '../ui/atoms/img';
 import styled from "styled-components";
 import { withKnobs, text, color  } from "@storybook/addon-knobs";
 import {SmallBlock } from '../ui/molecules/Small';
+import {VeryLargeBlock } from '../ui/molecules/VeryLarge';
 import Large from '../ui/molecules/Large'
 
 
@@ -36,11 +37,21 @@ export const Small = () => {
   )
 }
 
+export const VeryLarge = () => {
+  return(
+    <VeryLargeBlock>
+      <Img size={imgSize.veryLarge}/>
+      <Title text={text("Label", "Just Chatting")} size={sizes.title}/>
+    </VeryLargeBlock>
+  )
+}
+
 export const LargeVersion = () => {
   return (
     <Large></Large>
   )
 }
+
 
 
 
