@@ -12,13 +12,14 @@ const LargeStyle = styled.div`
   width: 344px;
   height: 86px;
   display: flex;
+  background: #15121C;
 `
 export default () => {
   return(
     <LargeStyle>
       <Img size={imgSize.large}/>
       <div>
-        <Title color="#030303" text="Just Chatting"/>
+        <Title color="#fefefe" text="Just Chatting"/>
         <Description description="253,2 k spectateurs"/>
         <Badge text="IRL" color="#fefefe" bg="#3a2e5d"/>
       </div>
