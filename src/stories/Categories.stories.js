@@ -16,7 +16,7 @@ export default {
   decorators: [withKnobs]
 };
 
-const LargeBlock = styled.div`
+const SmallBlock = styled.div`
   width:88px;
   height:151px;
   display:flex;
@@ -27,11 +27,11 @@ const LargeBlock = styled.div`
 
 export const Small = () => {
   return (
-    <LargeBlock>
+    <SmallBlock>
       <Img />
       <Title text={text("Label", "Just Chatting")} size={sizes.title} />
       <Title text={text("Label", "253,2  k spectateurs")} size={sizes.desc} />
-    </LargeBlock>
+    </SmallBlock>
   )
 }
 
