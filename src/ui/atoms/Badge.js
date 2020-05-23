@@ -5,7 +5,7 @@ import Colors from "../particles/Colors";
 
 export const colors = {
     purple: "purple",
-    grey: "green"
+    grey: "red"
 };
 
 const BadgeWrapper = styled.span`
