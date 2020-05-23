@@ -1,27 +1,23 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import PropTypes from "prop-types";
-import Colors from "../particles/Colors";
 
-export const colors = {
-    purple: "purple",
-    grey: "red"
-};
 
 const BadgeWrapper = styled.span`
-  background: ${props => (props.color === colors.purple ? Colors.brand_primary : Colors.neutral_grey)};
-  margin-right: 8px;
-  padding: 4px 8px;
-  border-radius: 22px;
-  color: white;
-  font-family: sans-serif;
-  font-size: 12px;
+margin-right: 8px;
+padding: 4px 8px;
+border-radius: 22px;
+color: ${(props) => props.color};
+background-color: ${(props) => props.color};
+font-family: sans-serif;
+font-size: 12px;
 `;
 
 const Badge = props => {
-    const { text, color } = props;
-    return <BadgeWrapper color={color}>{text}</BadgeWrapper>;
+    const { text } = props;
+    return <BadgeWrapper>{text}</BadgeWrapper>;
 };
+
+export default Badge;
 
 Badge.defaultProps = {
     color: colors.grey

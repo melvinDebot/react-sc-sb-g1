@@ -9,7 +9,7 @@ export const sizes = {
 }
 
 const Texte = styled.h1`
-  color: white;
+  color: ${(props) => props.color};
   margin:0;
   padding:0;
   font-size: ${sizes.title}
