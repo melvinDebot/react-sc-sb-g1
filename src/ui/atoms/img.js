@@ -7,14 +7,20 @@ const image = {
   alt: 'my image',
 };
 
-const ImageStyled = styled.div`
+export const imgSize = {
+  small : "88px",
+  veryLarge : "104px",
+  large: "72px"
+}
+
+const ImageStyled = styled.img`
   background-size: cover;
-  width: 72px;
+  width: ${props=> (props.size)};
   height: 86px;
 `
 
-const Img = (props) => (
-  <ImageStyled src={image.src}/>
+const Img = ({ src, size }) => (
+  <ImageStyled src={image.src} size={imgSize[size]}/>
 );
 
 export default Img;

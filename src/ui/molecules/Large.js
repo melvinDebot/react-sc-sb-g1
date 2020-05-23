@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // IMPORT DES COMPONENTS
 import Badge from '../atoms/Badge';
 import Description from '../atoms/Description';
-import Img from '../atoms/img';
+import Img, {imgSize} from '../atoms/img';
 import Title from '../atoms/Title';
 
 // STYLE DU COMPONENT
@@ -16,7 +16,7 @@ const LargeStyle = styled.div`
 export default () => {
   return(
     <LargeStyle>
-      <Img/>
+      <Img size={imgSize.large}/>
       <div>
         <Title color="#030303" text="Just Chatting"/>
         <Description description="253,2 k spectateurs"/>
