@@ -26,7 +26,7 @@ export const Small = () => {
   return(
     <SmallBlock>
       <Img size={imgSize.small}/>
-      <Title text={text("Label", "Just Chatting")} size={sizes.desc} color="red"/>
+      <Title text={text("Label", "Just Chatting")} size={sizes.desc} color="white"/>
       <Desc description="253,2  k spectateurs" />
     </SmallBlock>
   )
@@ -36,7 +36,7 @@ export const SmallWithBadge = () => {
   return(
     <SmallBadgeStyle>
       <Img size={imgSize.small}/>
-      <Title text={text("Label", "Just Chatting")} size={sizes.desc} color="red"/>
+      <Title text={text("Label", "Just Chatting")} size={sizes.desc} color="white"/>
       <Desc description="253,2  k spectateurs" />
     </SmallBadgeStyle>
   )

@@ -9,15 +9,15 @@ export const sizes = {
 }
 
 const Texte = styled.h1`
-  color: white;
+  color: ${(props) => props.color};
   margin:0;
   padding:0;
   font-size: ${sizes.title}
 `
 
 const Title = props => {
-  const {size, text} = props;
-  return <Texte size={size}>{text}</Texte>
+  const {size, text, color} = props;
+  return <Texte size={size} color={color}>{text}</Texte>
 }
 
 
