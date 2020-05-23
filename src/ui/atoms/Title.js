@@ -9,7 +9,7 @@ export const sizes = {
 }
 
 const Texte = styled.h1`
-  color: white;
+  color: ${(props) => props.color};
   margin:0;
   margin-top:5px;
   font-family: roboto;

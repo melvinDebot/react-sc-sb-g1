@@ -3,24 +3,25 @@ import React from 'react';
 import styled from 'styled-components';
 // IMPORT DES COMPONENTS
 import Badge from '../atoms/Badge';
+import Description from '../atoms/Description';
 import Img from '../atoms/img';
 import Title from '../atoms/Title';
 
 // STYLE DU COMPONENT
-const largeStyle = styled.div`
+const LargeStyle = styled.div`
   width: 344px;
   height: 86px;
   display: flex;
 `
-
-export const Large = () => {
+export default () => {
   return(
-    <largeStyle>
+    <LargeStyle>
       <Img/>
       <div>
-        <Title/>
-        <Badge/>
+        <Title color="#030303" text="Just Chatting"/>
+        <Description description="253,2 k spectateurs"/>
+        <Badge text="IRL"/>
       </div>
-    </largeStyle>
+    </LargeStyle>
   )
 }
