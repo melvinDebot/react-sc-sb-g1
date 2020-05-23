@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
+
 const BadgeWrapper = styled.span`
 margin-right: 8px;
 padding: 4px 8px;
@@ -17,6 +18,7 @@ const Badge = props => {
 };
 
 export default Badge;
+
 
 
 

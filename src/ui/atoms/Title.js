@@ -17,8 +17,8 @@ const Texte = styled.h1`
 `
 
 const Title = props => {
-  const {size, text} = props;
-  return <Texte size={size}>{text}</Texte>
+  const {size, text, color} = props;
+  return <Texte size={size} color={color}>{text}</Texte>
 }
 
 
